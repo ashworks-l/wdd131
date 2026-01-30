@@ -1,7 +1,7 @@
 :root {
-  --blue-dark: #0077b6;
-  --blue-light: #00b4d8;
-  --overlay: rgba(255, 255, 255, 0.88);
+  --blue-dark: rgb(0, 119, 182);
+  --blue-light: rgb(0, 180, 216);
+  --overlay: rgb(255 255 255 / 0.88); 
 }
 
 /* =====================
