@@ -35,6 +35,8 @@ header {
 ===================== */
 .hero-container {
   position: relative;
+  display: grid;
+  gap: 1rem;
 }
 
 .hero img {
@@ -87,13 +89,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* =====================
-   MOBILE (DEFAULT)
-===================== */
-.hero-container {
-  display: grid;
-  gap: 1rem;
-}
+
 
 .data,
 .weather {
@@ -104,6 +100,9 @@ footer {
    LAPTOP / DESKTOP
 ===================== */
 @media (min-width: 768px) {
+  .weather-title::after {
+    content: " ⛅";
+}
 
   .hero-container {
     display: block;

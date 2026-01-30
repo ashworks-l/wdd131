@@ -19,10 +19,12 @@
 <main class="hero-container">
 
   <!-- HERO IMAGE -->
-  <picture class="hero">
-    <source srcset="images/maldives.jpg" media="(min-width: 768px)">
-    <img src="images/maldives.jpg" alt="Maldives islands">
-  </picture>
+<picture class="hero">
+  <source srcset="images/maldives.webp" type="image/webp" media="(min-width: 768px)">
+  <source srcset="images/maldives.webp" type="image/webp">
+  <img src="images/maldives.jpg" alt="Maldives islands">
+</picture>
+
 
   <!-- DATA CARD -->
   <section class="card data">
@@ -39,7 +41,7 @@
 
   <!-- WEATHER CARD -->
   <section class="card weather">
-    <h2>Weather <span class="icon">⛅</span></h2>
+   <h2 class="weather-title">Weather</h2>
     <img src="images/cloud-sun-solid-full.svg" alt="Weather icon" class="weather-icon">
     <p><strong>Temperature:</strong> 28 °C</p>
     <p><strong>Conditions:</strong> Partly Cloudy</p>
