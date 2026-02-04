@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Temple Album</title>
+
+  <meta name="description" content="Filtered Temple Album using JavaScript array filtering.">
+  <meta name="author" content="Ashley Lujan Yañez">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>Temple Album</h1>
+
+  <button id="menu-btn" aria-label="Menu">☰</button>
+
+  <nav id="nav-menu">
+    <a href="#" data-filter="home">Home</a>
+    <a href="#" data-filter="old">Old</a>
+    <a href="#" data-filter="new">New</a>
+    <a href="#" data-filter="large">Large</a>
+    <a href="#" data-filter="small">Small</a>
+  </nav>
+</header>
+
+<main>
+  <h2 id="page-title">Home</h2>
+
+  <section class="gallery" id="temple-gallery">
+    <h3 class="visually-hidden">Temple Gallery</h3>
+
+  </section>
+</main>
+
+<footer>
+  <p>
+    ©<span id="year"></span> 🌸 Ashley Lujan Yañez 🌸 Peru<br>
+    Last Modification: <span id="lastModified"></span>
+  </p>
+</footer>
+
+</body>
+</html>
