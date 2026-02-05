@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Product Review</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review</title>
+  <meta name="description" content="Product review form where users can rate products, select useful features, and submit written feedback.">
   <meta name="author" content="Ashley Lujan">
   <link rel="stylesheet" href="styles/style.css">
   <script src="scripts/products.js" defer></script>
@@ -20,16 +22,26 @@
 
     <label for="product">Product Name</label>
     <select id="product" name="product" required>
-      <option value="" disabled selected>Choose a Product ...</option>
+      <option value="" disabled selected>Select a Product ...</option>
     </select>
 
     <fieldset class="rating">
       <legend>Overall Rating</legend>
-      <label><input type="radio" name="rating" value="1" required> ☆</label>
-      <label><input type="radio" name="rating" value="2"> ☆☆</label>
-      <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-      <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-      <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+
+      <input type="radio" id="rating1" name="rating" value="1" required>
+      <label for="rating1">☆</label>
+
+      <input type="radio" id="rating2" name="rating" value="2" required>
+      <label for="rating2">☆☆</label>
+
+      <input type="radio" id="rating3" name="rating" value="3" required>
+      <label for="rating3">☆☆☆</label>
+
+      <input type="radio" id="rating4" name="rating" value="4" required>
+      <label for="rating4">☆☆☆☆</label>
+
+      <input type="radio" id="rating5" name="rating" value="5" required>
+      <label for="rating5">☆☆☆☆☆</label>
     </fieldset>
 
     <label for="date">Date of Installation</label>
@@ -37,10 +49,18 @@
 
     <fieldset>
       <legend>Which features did you find useful in the product? <em>(Check all that apply)</em></legend>
-      <label><input type="checkbox" name="features" value="durability"> Durability</label>
-      <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
-      <label><input type="checkbox" name="features" value="performance"> Performance</label>
-      <label><input type="checkbox" name="features" value="design"> Design</label>
+
+      <input type="checkbox" id="durability" name="features" value="durability">
+      <label for="durability">Durability</label>
+
+      <input type="checkbox" id="easeOfUse" name="features" value="ease-of-use">
+      <label for="easeOfUse">Ease of Use</label>
+
+      <input type="checkbox" id="performance" name="features" value="performance">
+      <label for="performance">Performance</label>
+
+      <input type="checkbox" id="design" name="features" value="design">
+      <label for="design">Design</label>
     </fieldset>
 
     <label for="review">Written Review <span class="optional">(Optional)</span></label>
@@ -54,13 +74,17 @@
   </form>
 </main>
 
-
 <footer>
   <p>
     ©<span id="year"></span> 🌸 Ashley Lujan Yañez 🌸 Peru<br>
     Last Modification: <span id="lastModified"></span>
   </p>
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("lastModified").textContent = document.lastModified;
+</script>
 
 </body>
 </html>
