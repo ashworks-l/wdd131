@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover your perfect getaway with our travel platform, where you can explore destinations, compare hotels, and read authentic reviews from other travelers. Plan unforgettable trips, find the best deals on flights and accommodations, and get personalized recommendations based on your preferences. ">
+<meta name="author" content="Ashley Dajana Lujan">
+<title>Explore</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script defer src="js/scripts.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Travel Explorer</h1>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="intro">
+<h2>Explore the world</h2>
+</section>
+
+<main class="grid">
+
+<div class="card">
+<h2>Paris</h2>
+<img src="https://media.traveler.es/photos/613766512a0f25a763b1a2dc/master/w_1600%2Cc_limit/174130.jpg" alt="Australia">
+<p>The land below.</p>
+<button onclick="saveFavorite('Australia')">Save</button>
+</div>
+
+<div class="card">
+<h2>Madagascar</h2>
+<img src="https://africsoul.com/wp-content/uploads/2021/03/baobabs_dc88eef4_1254x836.jpeg" alt="Etiopia">
+<p>The red island.</p>
+<button onclick="saveFavorite('Madagascar')">Save</button>
+</div>
+
+<div class="card">
+<h2>Maldivas</h2>
+<img src="https://cdn.prod.website-files.com/66c59bb6ecf662630baf4355/66fdc3cfba1e583f7c709221_Consejos-para-viajar-a-Maldivas-y-disfrutar-de-verdad.jpeg" alt="Maldivas">
+<p>The sunny side of life.</p>
+<button onclick="saveFavorite('Maldivas')">Save</button>
+</div>
+
+<div class="card">
+<h2>Greece</h2>
+<img src="https://assets.paxassistance.com/blog/a186fcf6-8567-4fde-8624-ef8b8a0c12c5-las-mejores-playas-de-grecia.webp" alt="Grecia">
+<p>Helas.</p>
+<button onclick="saveFavorite('Greece')">Save</button>
+</div>
+</main>
+
+<section>
+<h2>Tips</h2>
+<button id="tipsBtn">Show Tips</button>
+<div id="tipsBox"></div>
+</section>
+
+<footer>
+<p> 
+    ©<span id="year"></span> 🌸 Ashley Lujan Yañez 🌸 Peru<br>
+    Last Modification: <span id="lastModified"></span>
+</p>
+</footer>
+
+</body>
+</html>

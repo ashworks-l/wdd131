@@ -1,0 +1,91 @@
+/* ===== TYPOGR ===== */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+}
+
+/* ===== INTRO ===== */
+.intro {
+    text-align: center;
+    padding: 20px;
+    background: #f0f8ff;
+}
+
+/* ===== GRID GLOBAL ===== */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* ===== CARDS  ===== */
+.card {
+    background: #e0f0ff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+/* ===== IMG CARD ===== */
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ===== INPUTS ===== */
+input, select {
+    padding: 8px;
+    margin: 10px;
+    width: 90%;
+}
+
+/* ===== BUTTON ===== */
+button {
+    padding: 6px;
+    cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color:#0077b6 ;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
